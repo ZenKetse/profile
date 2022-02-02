@@ -6,7 +6,7 @@ body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   padding: 5px;
-  width: 500px;
+  width: 100vw;
   margin: 0 auto;
 }
 
@@ -77,10 +77,17 @@ ul li {
   background-color: #404F4C;
 }
 
+@media (max-width: 50000px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 50vw;
+  }
+}
+
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
-    width: 700px;
+    width: 500px;
   }
 }
 
